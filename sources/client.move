@@ -1,12 +1,6 @@
 
 module client::client {
-    use std::string;
     use reclaim::reclaim::{ReclaimManager, Proof};
-
-    // Creates a new witness
-    public fun create_witness(addr: vector<u8>, host: string::String): vector<u8> {
-        reclaim::reclaim::create_witness(addr, host)
-    }
 
     // Creates a new Reclaim Manager
     public fun create_reclaim_manager(
@@ -30,8 +24,9 @@ module client::client {
     public fun verify_proof(
         manager: &ReclaimManager,
         proof: &Proof,
+        ctx: &mut TxContext,
     ): vector<vector<u8>> {
-        reclaim::reclaim::verify_proof(manager, proof)       
+        reclaim::reclaim::verify_proof(manager, proof, ctx)       
     }
 }
 

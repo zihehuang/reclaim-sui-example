@@ -2,7 +2,7 @@
 
 [move]
 version = 2
-manifest_digest = "8EB29CA76FC818422AD6B5100531501CE6A821911A9FADB7909EB3A539914950"
+manifest_digest = "4EE26443D27A28D37FB2EA9E99DC5B3D6A4FE988EAE65A408F892896EB160152"
 deps_digest = "3C4103934B1E040BB6B23F1D610B4EF9F2F1166A50A104EADCF77467C004C600"
 dependencies = [
   { name = "Reclaim" },
@@ -15,7 +15,7 @@ source = { git = "https://github.com/MystenLabs/sui.git", rev = "framework/testn
 
 [[move.package]]
 name = "Reclaim"
-source = { git = "https://gitlab.reclaimprotocol.org/reclaim-clients/move-sdk.git", rev = "main", subdir = "" }
+source = { git = "https://gitlab.reclaimprotocol.org/integrations/onchain/move-sdk.git", rev = "main", subdir = "" }
 
 dependencies = [
   { name = "Sui" },
@@ -30,6 +30,6 @@ dependencies = [
 ]
 
 [move.toolchain-version]
-compiler-version = "1.23.0"
-edition = "2024.beta"
+compiler-version = "1.31.1"
+edition = "2024.alpha"
 flavor = "sui"
