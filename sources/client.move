@@ -30,3 +30,6 @@ module client::client {
     }
 }
 
+
+sui client call --package $PACKAGE 0xa8898b110c2295a3d9b12c2f69a3c4e53eaae6743bb2bf5bfcaf2232133f5855 --module client --function add_new_epoch --args $MANAGER "[0x244897572368eadf65bfbc5aec98d8e5443a9072]" 1 --gas-budget 100000000
+

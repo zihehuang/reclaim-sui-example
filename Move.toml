@@ -13,7 +13,7 @@ Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-fram
 Reclaim = { git = "https://gitlab.reclaimprotocol.org/integrations/onchain/move-sdk.git", rev = "main" }
 
 # For local dependencies use `local = path`. Path is relative to the package root
-# Local = { local = "../path/to" }
+# Reclaim = { local = "../move-sdk" }
 
 # To resolve a version conflict and force a specific version for dependency
 # override use `override = true`

@@ -2,7 +2,7 @@
 
 [move]
 version = 2
-manifest_digest = "4EE26443D27A28D37FB2EA9E99DC5B3D6A4FE988EAE65A408F892896EB160152"
+manifest_digest = "6BD160BE37F03EFDED95428BE0CF170AA38072FC6FBC3ED6E45D8FD317BDF26E"
 deps_digest = "3C4103934B1E040BB6B23F1D610B4EF9F2F1166A50A104EADCF77467C004C600"
 dependencies = [
   { name = "Reclaim" },
@@ -33,3 +33,17 @@ dependencies = [
 compiler-version = "1.31.1"
 edition = "2024.alpha"
 flavor = "sui"
+
+[env]
+
+[env.devnet]
+chain-id = "f2bac0d4"
+original-published-id = "0xf62deb672a7990f9ed4d8b72e1c608aa833d9b9984afef7c6cee57c548c1d5af"
+latest-published-id = "0xf62deb672a7990f9ed4d8b72e1c608aa833d9b9984afef7c6cee57c548c1d5af"
+published-version = "1"
+
+[env.testnet]
+chain-id = "4c78adac"
+original-published-id = "0xa8898b110c2295a3d9b12c2f69a3c4e53eaae6743bb2bf5bfcaf2232133f5855"
+latest-published-id = "0xa8898b110c2295a3d9b12c2f69a3c4e53eaae6743bb2bf5bfcaf2232133f5855"
+published-version = "1"
