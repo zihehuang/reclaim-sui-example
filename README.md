@@ -61,4 +61,4 @@ You can view the Devnet deployment here: [Devnet Package](https://devnet.suivisi
 
 ### Testnet Deployment
 
-You can view the Testnet deployment here: [Testnet Object](https://suiscan.xyz/testnet/object/0x32ad944df8cb0d8c3d023812cc12657a1bfc855d63d7bc54e7c8038c7ffbc3bc/txs)
+You can view the Testnet deployment here: [Testnet Object](https://suiscan.xyz/testnet/object/0xa8898b110c2295a3d9b12c2f69a3c4e53eaae6743bb2bf5bfcaf2232133f5855/txs)
