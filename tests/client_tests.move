@@ -3,6 +3,8 @@ module client::client_tests {
   use client::client;
   use reclaim::reclaim;
   use sui::test_scenario;
+  use std::string;
+  use std::debug;
 
 #[test]
   fun test_reclaim() {

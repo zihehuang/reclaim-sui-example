@@ -10,7 +10,7 @@ Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-fram
 # For remote import, use the `{ git = "...", subdir = "...", rev = "..." }`.
 # Revision can be a branch, a tag, and a commit hash.
 # MyRemotePackage = { git = "https://some.remote/host.git", subdir = "remote/path", rev = "main" }
-Reclaim = { git = "https://gitlab.reclaimprotocol.org/integrations/onchain/move-sdk.git", rev = "main" }
+Reclaim = { git = "https://gitlab.reclaimprotocol.org/integrations/onchain/move-sdk.git", rev = "testnet" }
 
 # For local dependencies use `local = path`. Path is relative to the package root
 # Reclaim = { local = "../move-sdk" }
