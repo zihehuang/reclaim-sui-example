@@ -53,6 +53,24 @@ sui client call --package $PACKAGE --module client --function add_new_epoch --ar
 - Replace `$PACKAGE` with your package ID.
 - Replace `$MANAGER` with the object ID obtained from the `create_reclaim_manager` command.
 
+### Create a Proof
+```bash
+sui client call --package $PACKAGE --module client \
+    --function create_proof --args '"$PARAMETERS"' \
+    '"$CONTEXT"' \
+    '"$IDENTIFIER"' \
+    '"$OWNER"' \
+    '"$EPOCH"' \
+    '"$TIMESTAMP_S"' \
+    "$SIGNATURE" --gas-budget 100000000
+```
+
+### Verify a Proof
+```bash
+sui client call package $PACKAGE --module client \
+    --function verify_proof --args $MANAGER $PROOF --gas-budget 100000000
+```
+
 ## Deployment Links
 
 ### Devnet Deployment
